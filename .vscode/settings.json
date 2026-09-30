@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.export": true,
+        "**/.git": true,
+        "**/.github/": true,
+        "**/.gitignore": true,
+        "**/.gitmodules": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/.templatesyncignore": true,
+        "**/.vscode/": true,
+        "**/CVS": true,
+        "**/export": true,
+        "**/Thumbs.db": true,
+        "css/": false
+    }
+}

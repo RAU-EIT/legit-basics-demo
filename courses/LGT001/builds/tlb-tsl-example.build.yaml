@@ -1,0 +1,32 @@
+builds:
+  - desc: TSL example with all presentations
+    baseDirectory: output/courses/LGT001/TSL
+    skipBuild: false
+    debug: true
+    outputFilename: output/courses/LGT001/TSL/LGT001-TSL
+    css: style-rau-base/rau-presentation-customer_print.css
+    outputType: print
+    print:
+      slideNotes: false # student lesson printouts do not include instructor notes   
+    files:
+      - courses\LGT001\tsl-frontcover.yaml
+      - samples\_template-files\print\user-info.md
+      - samples\_template-files\print\comments.md
+      - outcomes\outcome_01\presentation.md
+      - outcomes\outcome_02\presentation.md
+      - samples\_template-files\print\backcover.md
+  - desc: TLB example with all lab exercises
+    baseDirectory: output/courses/LGT001/TLB
+    outputFilename: output/courses/LGT001/TLB/LGT001-TLB
+    css: style-rau-base/rau-presentation-customer_print.css
+    debug: true
+    skipBuild: false
+    outputType: print   
+    files:
+      - courses\LGT001\tlb-frontcover.yaml
+      - samples\_template-files\print\user-info.md
+      - samples\_template-files\print\comments.md
+      - outcomes\outcome_01\lab.md
+      - outcomes\outcome_02\lab.md
+      - samples\_template-files\print\backcover.md
+      

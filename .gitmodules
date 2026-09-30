@@ -1,0 +1,3 @@
+[submodule "style-rau-base"]
+	path = style-rau-base
+	url = https://github.com/RAU-EIT/style-rau-base

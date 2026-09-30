@@ -1,0 +1,6 @@
+# Ignore vscode-reveal extension generated export folder
+# ignore export at any level
+export/ 
+output
+output-staging
+dev-tests

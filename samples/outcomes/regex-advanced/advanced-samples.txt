@@ -1,0 +1,42 @@
+Ranged Repetition, {m,n}
+
+- 1.0 thing
+  - 1.1 thing
+    - 1.1.1 thing
+  - 1.2 thing
+- 2.0 thing
+  - 2.1 thing
+
+---
+
+   - 3 spaces off
+
+Ranged Repetition, IP Addresses
+
+10.10.243.90
+8.8.8.8
+192.168.1.8
+172.0.0.10
+67.45.22.200
+900.800.700.600
+01.02.03.04
+
+'Or More' Repetition, *, +
+
+- 1.0 thing
+  - 1.1 thing
+    - 1.1.1 thing
+  - 1.2 thing
+- 2.0 thing
+  - 2.1 thing
+
+
+cat
+dog
+catdog
+dogcat
+catcat
+cat cat
+cat dog
+dogdog
+catcatdogdog

@@ -1,0 +1,142 @@
+# build.yaml - a configuration for builds of content
+builds:
+- desc: regex prez 01 intro
+  outputType: revealjs
+  skipBuild: false
+  debug: false
+  publication:
+    id: PUB123 
+    revisionDate: "June 2026"
+    classification: Internal
+  baseDirectory: output/courses/ra-regex/presentations/01-regex-intro
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/01-regex-intro/01-regex-intro # note the optional different subfolder as output
+  files:  # files array can have multiple markdown files in a single presentation (title slides beyond 1st are ignored)
+    - samples/outcomes/regex-intro/presentation.md
+- desc: regex prez 02 basics
+  skipBuild: false
+  debug: false
+  outputType: revealjs
+  publication:
+    id: RAU011
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+  baseDirectory: output/courses/ra-regex/presentations/02-basic-regex
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/02-basic-regex/02-basic-regex # note the optional different subfolder as output
+  files:
+    - samples/outcomes/regex-basics/presentation.md
+- desc: regex prez 03 advanced
+  skipBuild: false
+  debug: false
+  outputType: revealjs
+  publication:
+    id: RAU010
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+  baseDirectory: output/courses/ra-regex/presentations/03-advanced-regex
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/03-advanced-regex/03-advanced-regex # note the optional different subfolder as output
+  files:
+    - samples/outcomes/regex-advanced/presentation.md
+- desc: regex lab manual PDF
+  css: style-rau-base/rau-print.css
+  skipBuild: false
+  debug: false
+  outputType: print
+  baseDirectory: output/courses/ra-regex
+  outputFilename: output/courses/ra-regex/lab-manual
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/courses/ra-regex/TLB-frontcover.yaml
+    - samples/_template-files/print/user-info.md
+    - samples/outcomes/regex-intro/lab.md
+    - samples/outcomes/regex-basics/lab.md
+    - samples/outcomes/regex-advanced/lab.md 
+    - samples/_template-files/print/appendix.md
+    - samples/_template-files/print/comments.md
+    - samples/_template-files/print/backcover.md
+- desc: sample SCORM module
+  debug: false
+  skipBuild: false
+  scorm:
+    title: Sample SCORM Module
+    subtitle: Examples of SCORM content
+    desc: | 
+      A sample module built from sample files for you to sample a sample of what the sample offers. 
+
+      This can be multiple lines. 
+
+      But, it will show up in the launchpage as a single paragraph for now. 
+    sections:
+      - index: 0
+        title: First Group
+        files:
+          - samples/_template-files/e-learning/scorm-section-1-passives.md
+      - index: 1
+        title: Second Group
+        files:
+          - samples/_template-files/e-learning/scorm-section-2-interactives.md 
+      - index: 2
+        title: Quiz Section
+        files:
+          - samples/_template-files/e-learning/scorm-quiz.md
+  css: style-rau-base/rau-scorm.css
+  publication:
+    id: RAU003
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+  baseDirectory: output/courses/sample-scorm
+  outputType: scorm1.2 # print | presentation | scorm
+  outputFilename: output/courses/sample-scorm # no extension; determined by build-type
+  files: # one or more files, list order (top to bottom) is preserved in output document
+    - samples/_template-files/e-learning/scorm-frontcover.yaml
+    - samples/_template-files/e-learning/scorm-section-1-passives.md 
+    - samples/_template-files/e-learning/scorm-section-2-interactives.md 
+    - samples/_template-files/e-learning/scorm-quiz.md
+- desc: regex prez 01 intro (pptx)
+  outputType: pptx
+  skipBuild: true # pptx output is a feature currently in development - this likely doesn't work
+  pptx: 
+    referencePPTX: style-rau-base/RAU-common-template.pptx
+  publication:
+    id: PUB123
+    revisionDate: "June 2026"
+    classification: Internal
+  baseDirectory: output/courses/ra-regex/presentations/01-regex-intro
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/01-regex-intro/01-regex-intro # note the optional different subfolder as output
+  files:  # files array can have multiple markdown files in a single presentation (title slides beyond 1st are ignored)
+    - samples/outcomes/regex-intro/presentation.md
+- desc: regex presentation manual PDF
+  css: style-rau-base/rau-presentation-customer_print.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex
+  outputFilename: output/courses/ra-regex/presentation-manual
+  print:
+    showNotes: true
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/courses/ra-regex/TSL-frontcover.yaml
+    - samples/_template-files/print/user-info.md
+    - samples/outcomes/regex-intro/presentation.md
+    - samples/outcomes/regex-basics/presentation.md
+    - samples/outcomes/regex-advanced/presentation.md
+    - samples/_template-files/print/comments.md
+    - samples/_template-files/print/backcover.md
+
+#linkedBuilds:
+#  - samples/courses/ra-regex/builds/tlb-tsl-example.build.yaml
+#  - samples/courses/ra-regex/builds/all-presentations.build.yaml

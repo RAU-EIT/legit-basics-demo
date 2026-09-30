@@ -1,0 +1,2659 @@
+Copyright (c) 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003,
+    2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+    2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023,
+    2024
+    The NetBSD Foundation, Inc.  All rights reserved.
+Copyright (c) 1982, 1986, 1989, 1991, 1993
+    The Regents of the University of California.  All rights reserved.
+
+NetBSD 10.0 (GENERIC_AMDGPU) #8: Sun Mar 31 22:50:50 EEST 2024
+	andriusv@agraphic-pc:/home/andriusv/obj/sys/arch/amd64/compile/GENERIC_AMDGPU
+total memory = 32691 MB
+avail memory = 31592 MB
+timecounter: Timecounters tick every 10.000 msec
+Kernelized RAIDframe activated
+RTC BIOS diagnostic error 0xf<fixed_disk,invalid_time>
+timecounter: Timecounter "i8254" frequency 1193182 Hz quality 100
+efi: systbl at pa bdb74018
+mainbus0 (root)
+ACPI: RSDP 0x00000000BCEBD014 000024 (v02 ALASKA)
+ACPI: XSDT 0x00000000BCEBC728 0000EC (v01 ALASKA A M I    01072009 AMI  01000013)
+ACPI: FACP 0x00000000BC7D8000 000114 (v06 ALASKA A M I    01072009 AMI  00010013)
+ACPI: DSDT 0x00000000BC6CF000 0069DC (v02 ALASKA A M I    01072009 INTL 20190509)
+ACPI: FACS 0x00000000BCEB7000 000040
+ACPI: SSDT 0x00000000BC7E7000 00AFB8 (v02 GBT    GSWApp   00000001 INTL 20190509)
+ACPI: SSDT 0x00000000BC7DE000 008CE9 (v02 AMD    AmdTable 00000002 MSFT 04000000)
+ACPI: SSDT 0x00000000BC7DA000 003D7C (v02 AMD    AMD AOD  00000001 INTL 20190509)
+ACPI: SSDT 0x00000000BC7D9000 0001AD (v02 ALASKA CPUSSDT  01072009 AMI  01072009)
+ACPI: FIDT 0x00000000BC7D1000 00009C (v01 ALASKA A M I    01072009 AMI  00010013)
+ACPI: MCFG 0x00000000BC7D0000 00003C (v01 ALASKA A M I    01072009 MSFT 00010013)
+ACPI: HPET 0x00000000BC7CF000 000038 (v01 ALASKA A M I    01072009 AMI  00000005)
+ACPI: IVRS 0x00000000BC7CE000 0000D0 (v02 AMD    AmdTable 00000001 AMD  00000001)
+ACPI: FPDT 0x00000000BC7CD000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+ACPI: BGRT 0x00000000BC7CC000 000038 (v01 ALASKA A M I    01072009 AMI  00010013)
+ACPI: TPM2 0x00000000BC7CB000 00004C (v04 ALASKA A M I    00000001 AMI  00000000)
+ACPI: PCCT 0x00000000BC7CA000 00006E (v02 AMD    AmdTable 00000001 AMD  00000001)
+ACPI: SSDT 0x00000000BC7C6000 0030FB (v02 AMD    AmdTable 00000001 AMD  00000001)
+ACPI: CRAT 0x00000000BC7C5000 000B90 (v01 AMD    AmdTable 00000001 AMD  00000001)
+ACPI: CDIT 0x00000000BC7C4000 000029 (v01 AMD    AmdTable 00000001 AMD  00000001)
+ACPI: WPBT 0x00000000BC6E0000 000038 (v01 ALASKA A M I    00000001 GBT  20181220)
+ACPI: SSDT 0x00000000BC6DF000 00068E (v02 AMD    ArticDGP 00000001 INTL 20190509)
+ACPI: SSDT 0x00000000BC6DD000 001522 (v02 AMD    ArticTPX 00000001 INTL 20190509)
+ACPI: SSDT 0x00000000BC6DC000 000788 (v02 AMD    ArticNOI 00000001 INTL 20190509)
+ACPI: SSDT 0x00000000BC6D8000 003A23 (v02 AMD    ArticN   00000001 INTL 20190509)
+ACPI: WSMT 0x00000000BC6D7000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+ACPI: APIC 0x00000000BC6D6000 00015E (v04 ALASKA A M I    01072009 AMI  00010013)
+ACPI: SSDT 0x00000000BC7D6000 00147F (v02 AMD    ArticC   00000001 INTL 20190509)
+ACPI: SSDT 0x00000000BC7D5000 0000BF (v01 AMD    AmdTable 00001000 INTL 20190509)
+ACPI: 12 ACPI AML tables successfully acquired and loaded
+ioapic0 at mainbus0 apid 13: pa 0xfec00000, version 0x21, 24 pins
+ioapic1 at mainbus0 apid 14: pa 0xfec01000, version 0x21, 32 pins
+cpu0 at mainbus0 apid 0
+cpu0: Use mfence to serialize rdtsc
+cpu0: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu0: node 0, package 0, core 0, smt 0
+cpu0: SVM disabled by the BIOS
+cpu1 at mainbus0 apid 2
+cpu1: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu1: node 0, package 0, core 1, smt 0
+cpu2 at mainbus0 apid 4
+cpu2: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu2: node 0, package 0, core 2, smt 0
+cpu3 at mainbus0 apid 6
+cpu3: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu3: node 0, package 0, core 3, smt 0
+cpu4 at mainbus0 apid 8
+cpu4: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu4: node 0, package 0, core 4, smt 0
+cpu5 at mainbus0 apid 10
+cpu5: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu5: node 0, package 0, core 5, smt 0
+cpu6 at mainbus0 apid 1
+cpu6: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu6: node 0, package 0, core 0, smt 1
+cpu7 at mainbus0 apid 3
+cpu7: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu7: node 0, package 0, core 1, smt 1
+cpu8 at mainbus0 apid 5
+cpu8: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu8: node 0, package 0, core 2, smt 1
+cpu9 at mainbus0 apid 7
+cpu9: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu9: node 0, package 0, core 3, smt 1
+cpu10 at mainbus0 apid 9
+cpu10: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu10: node 0, package 0, core 4, smt 1
+cpu11 at mainbus0 apid 11
+cpu11: AMD Ryzen 5 5600 6-Core Processor              , id 0xa20f12
+cpu11: node 0, package 0, core 5, smt 1
+acpi0 at mainbus0: Intel ACPICA 20221020
+acpi0: X/RSDT: OemId <ALASKA,  A M I ,01072009>, AslId <AMI ,01000013>
+acpi0: autoconfiguration error: invalid PCI address for D003
+acpi0: autoconfiguration error: invalid PCI address for D00A
+acpi0: MCFG: segment 0, bus 0-127, address 0x00000000f0000000
+acpi0: SCI interrupting at int 9
+acpi0: fixed power button present
+timecounter: Timecounter "ACPI-Safe" frequency 3579545 Hz quality 900
+hpet0 at acpi0: high precision event timer (mem 0xfed00000-0xfed00400)
+timecounter: Timecounter "hpet0" frequency 14318180 Hz quality 2000
+AMDN (PNP0C01) at acpi0 not configured
+attimer1 at acpi0 (TMR, PNP0100): io 0x40-0x43 irq 0
+pcppi1 at acpi0 (SPKR, PNP0800): io 0x61
+spkr0 at pcppi1: PC Speaker
+wsbell at spkr0 not configured
+midi0 at pcppi1: PC speaker
+sysbeep0 at pcppi1
+com0 at acpi0 (UAR1, PNP0501-0): io 0x3f8-0x3ff irq 4
+com0: ns16550a, 16-byte FIFO
+acpibut0 at acpi0 (PWRB, PNP0C0C-170): ACPI Power Button
+GPIO (AMDI0030) at acpi0 not configured
+TPM (MSFT0101) at acpi0 not configured
+PTIO (AMDIF030) at acpi0 not configured
+acpitz0 at acpi0 (TZ10)
+acpitz0: levels: critical 20.8 C, hot 19.8 C, passive 16.8 C, passive cooling
+acpitz1 at acpi0 (UAD0)
+acpitz1: levels: critical 20.8 C, hot 19.8 C, passive 16.8 C, passive cooling
+acpiwmi0 at acpi0 (GSA1, PNP0C14-GSADEV0): ACPI WMI Interface
+acpiwmibus at acpiwmi0 not configured
+acpiwmi1 at acpi0 (AOD, PNP0C14-AOD): ACPI WMI Interface
+acpiwmibus at acpiwmi1 not configured
+ACPI: Enabled 1 GPEs in block 00 to 1F
+attimer1: attached to pcppi1
+pci0 at mainbus0 bus 0: configuration mode 1
+pci0: i/o space, memory space enabled, rd/line, rd/mult, wr/inv ok
+amdsmn0 at pci0 dev 0 function 0: AMD System Management Network
+amdzentemp0 at amdsmn0: AMD CPU Temperature Sensors (Family19h)
+AMD Family17h/7xh IOMMU (IOMMU system) at pci0 dev 0 function 2 not configured
+pchb0 at pci0 dev 1 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+ppb0 at pci0 dev 1 function 1: AMD 17h/7xh PCIe (rev. 0x00)
+ppb0: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x4 @ 8.0GT/s
+pci1 at ppb0 bus 1
+pci1: i/o space, memory space enabled, rd/line, wr/inv ok
+nvme0 at pci1 dev 0 function 0: Western Digital (SanDisk) product 5019 (rev. 0x01)
+nvme0: NVMe 1.4
+nvme0: for admin queue interrupting at msix0 vec 0
+nvme0: WDC WDS100T2B0C-00PXH0, firmware 233010WD, serial 21281W452002
+nvme0: for io queue 1 interrupting at msix0 vec 1 affinity to cpu0
+nvme0: for io queue 2 interrupting at msix0 vec 2 affinity to cpu1
+nvme0: for io queue 3 interrupting at msix0 vec 3 affinity to cpu2
+nvme0: for io queue 4 interrupting at msix0 vec 4 affinity to cpu3
+nvme0: for io queue 5 interrupting at msix0 vec 5 affinity to cpu4
+nvme0: for io queue 6 interrupting at msix0 vec 6 affinity to cpu5
+nvme0: for io queue 7 interrupting at msix0 vec 7 affinity to cpu6
+nvme0: for io queue 8 interrupting at msix0 vec 8 affinity to cpu7
+nvme0: for io queue 9 interrupting at msix0 vec 9 affinity to cpu8
+nvme0: for io queue 10 interrupting at msix0 vec 10 affinity to cpu9
+nvme0: for io queue 11 interrupting at msix0 vec 11 affinity to cpu10
+nvme0: for io queue 12 interrupting at msix0 vec 12 affinity to cpu11
+ld0 at nvme0 nsid 1
+ld0: 931 GB, 121601 cyl, 255 head, 63 sec, 512 bytes/sect x 1953525168 sectors
+ppb1 at pci0 dev 1 function 2: AMD 17h/7xh PCIe (rev. 0x00)
+ppb1: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x8 @ 8.0GT/s
+ppb1: link is x4 @ 8.0GT/s
+pci2 at ppb1 bus 2
+pci2: i/o space, memory space enabled, rd/line, wr/inv ok
+xhci0 at pci2 dev 0 function 0: AMD product 43ec (rev. 0x00)
+xhci0: 64-bit DMA
+xhci0: interrupting at msix1 vec 0
+xhci0: xHCI version 1.10
+usb0 at xhci0: USB revision 3.1
+usb1 at xhci0: USB revision 2.0
+ahcisata0 at pci2 dev 0 function 1: AMD 500 Series AHCI (rev. 0x00)
+ahcisata0: 64-bit DMA
+ahcisata0: AHCI revision 1.31, 6 ports, 32 slots, CAP 0xef36ff25<SXS,PSC,SSC,PMD,SPM,SAM,ISS=0x3=Gen3,SCLO,SAL,SALP,SSS,SSNTF,SNCQ,S64A>
+ahcisata0: interrupting at msi2 vec 0
+atabus0 at ahcisata0 channel 0
+atabus1 at ahcisata0 channel 1
+atabus2 at ahcisata0 channel 4
+atabus3 at ahcisata0 channel 5
+ppb2 at pci2 dev 0 function 2: AMD 500 Series PCIe (rev. 0x00)
+ppb2: PCI Express capability version 2 <Upstream Port of PCI-E Switch>
+pci3 at ppb2 bus 3
+pci3: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb3 at pci3 dev 0 function 0: AMD 500 Series PCIe (rev. 0x00)
+ppb3: PCI Express capability version 2 <Downstream Port of PCI-E Switch> x2 @ 8.0GT/s
+pci4 at ppb3 bus 4
+pci4: i/o space, memory space enabled, rd/line, wr/inv ok
+aq0 at pci4 dev 0 function 0: Aquantia AQC100 10 Gigabit Network Adapter (rev. 0x02)
+aq0: Atlantic revision B1, F/W version 3.1.58
+aq0: fw2x> F/W capabilities=0x63c0001900007f20<PAUSE,ASYMMETRIC-PAUSE,LINK-DROP,SLEEP-PROXY,WOL,MAC-STOP,WOL-TIMER,STATISTICS>
+aq0: Etheraddr: [_MAC_XXXXXXXXXX]
+pchb1 at pci0 dev 2 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+pchb2 at pci0 dev 3 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+ppb4 at pci0 dev 3 function 1: AMD 17h/7xh PCIe (rev. 0x00)
+ppb4: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x16 @ 8.0GT/s
+pci5 at ppb4 bus 5
+pci5: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb5 at pci5 dev 0 function 0: ATI Technologies product 1478 (rev. 0xc1)
+ppb5: PCI Express capability version 2 <Upstream Port of PCI-E Switch>
+pci6 at ppb5 bus 6
+pci6: i/o space, memory space enabled, rd/line, wr/inv ok
+ppb6 at pci6 dev 0 function 0: ATI Technologies product 1479 (rev. 0x00)
+ppb6: PCI Express capability version 2 <Downstream Port of PCI-E Switch> x16 @ 16.0GT/s
+pci7 at ppb6 bus 7
+pci7: i/o space, memory space enabled, rd/line, wr/inv ok
+amdgpu0 at pci7 dev 0 function 0: ATI Technologies Radeon RX 5600 OEM/5600 XT / 5700/5700 XT (rev. 0xc1)
+hdaudio0 at pci7 dev 0 function 1: HD Audio Controller
+hdaudio0: interrupting at msi4 vec 0
+hdaudio0: HDA ver. 1.0, OSS 6, ISS 0, BSS 0, SDO 1, 64-bit
+hdafg0 at hdaudio0: ATI R6xx HDMI
+hdafg0: HDMI00 2ch: Digital Out [Jack]
+hdafg0: HDMI01 2ch: Digital Out [Jack]
+hdafg0: HDMI02 2ch: Digital Out [Jack]
+hdafg0: HDMI03 2ch: Digital Out [Jack]
+hdafg0: HDMI04 2ch: Digital Out [Jack]
+hdafg0: HDMI05 2ch: Digital Out [Jack]
+hdafg0: 2ch/0ch 32000Hz 44100Hz 48000Hz PCM16 AC3
+audio0 at hdafg0: playback
+audio0: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+spkr1 at audio0: PC Speaker (synthesized)
+wsbell at spkr1 not configured
+pchb3 at pci0 dev 4 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+pchb4 at pci0 dev 5 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+pchb5 at pci0 dev 7 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+ppb7 at pci0 dev 7 function 1: AMD 17h/7xh PCIe (rev. 0x00)
+ppb7: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x16 @ 16.0GT/s
+pci8 at ppb7 bus 8
+pci8: i/o space, memory space enabled, rd/line, wr/inv ok
+AMD product 148a (non-essential instrumentation, subclass 0x00) at pci8 dev 0 function 0 not configured
+pchb6 at pci0 dev 8 function 0: AMD 17h/7xh Host Bridge (rev. 0x00)
+ppb8 at pci0 dev 8 function 1: AMD 17h/7xh PCIe (rev. 0x00)
+ppb8: PCI Express capability version 2 <Root Port of PCI-E Root Complex> x16 @ 16.0GT/s
+pci9 at ppb8 bus 9
+pci9: i/o space, memory space enabled, rd/line, wr/inv ok
+AMD Family17h/7xh Reserved SPP (non-essential instrumentation, subclass 0x00) at pci9 dev 0 function 0 not configured
+amdccp0 at pci9 dev 0 function 1: AMD Cryptographic Coprocessor
+xhci1 at pci9 dev 0 function 3: AMD Family17h/7xh USB 3.0 Host Controller (rev. 0x00)
+xhci1: 64-bit DMA
+xhci1: interrupting at msix5 vec 0
+xhci1: xHCI version 1.10
+usb2 at xhci1: USB revision 3.1
+usb3 at xhci1: USB revision 2.0
+hdaudio1 at pci9 dev 0 function 4: HD Audio Controller
+hdaudio1: interrupting at msi6 vec 0
+hdaudio1: HDA ver. 1.0, OSS 4, ISS 4, BSS 0, SDO 1, 64-bit
+hdafg1 at hdaudio1: Realtek product 0b00
+hdafg1: DAC00 6ch: Speaker [Jack]
+hdafg1: DAC01 2ch: HP Out [Jack]
+hdafg1: DIG02 2ch: SPDIF Out [Jack]
+hdafg1: ADC03 2ch: Line In [Jack], Mic In [Jack]
+hdafg1: ADC04 2ch: Mic In [Jack]
+hdafg1: 6ch/2ch 32000Hz 44100Hz 48000Hz 88200Hz 96000Hz 192000Hz PCM16 PCM20 PCM24 AC3
+audio1 at hdafg1: playback, capture, full duplex, independent
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for playback
+audio1: slinear_le:16 2ch 48000Hz, blk 1920 bytes (10ms) for recording
+spkr2 at audio1: PC Speaker (synthesized)
+wsbell at spkr2 not configured
+piixpm0 at pci0 dev 20 function 0: AMD X370/X399 SMBus Controller (rev. 0x61)
+piixpm0: interrupting at SMI, 
+iic0 at piixpm0 port 0: I2C bus
+iic1 at piixpm0 port 1: I2C bus
+pcib0 at pci0 dev 20 function 3: AMD FCH LPC (rev. 0x51)
+pchb7 at pci0 dev 24 function 0: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb8 at pci0 dev 24 function 1: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb9 at pci0 dev 24 function 2: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb10 at pci0 dev 24 function 3: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb11 at pci0 dev 24 function 4: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb12 at pci0 dev 24 function 5: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb13 at pci0 dev 24 function 6: AMD 17h/7xh Data Fabric (rev. 0x00)
+pchb14 at pci0 dev 24 function 7: AMD 17h/7xh Data Fabric (rev. 0x00)
+isa0 at pcib0
+pckbc0 at isa0 port 0x60-0x64
+acpicpu0 at cpu0: ACPI CPU
+acpicpu0: C1: FFH, lat   1 us, pow     0 mW
+acpicpu0: C2: I/O, lat  18 us, pow     0 mW
+acpicpu0: P0: FFH, lat   1 us, pow  3850 mW, 3500 MHz
+acpicpu0: P1: FFH, lat   1 us, pow  2800 mW, 2800 MHz
+acpicpu0: P2: FFH, lat   1 us, pow  1980 mW, 2200 MHz
+acpicpu1 at cpu1: ACPI CPU
+acpicpu2 at cpu2: ACPI CPU
+acpicpu3 at cpu3: ACPI CPU
+acpicpu4 at cpu4: ACPI CPU
+acpicpu5 at cpu5: ACPI CPU
+acpicpu6 at cpu6: ACPI CPU
+acpicpu7 at cpu7: ACPI CPU
+acpicpu8 at cpu8: ACPI CPU
+acpicpu9 at cpu9: ACPI CPU
+acpicpu10 at cpu10: ACPI CPU
+acpicpu11 at cpu11: ACPI CPU
+timecounter: Timecounter "clockinterrupt" frequency 100 Hz quality 0
+timecounter: Timecounter "TSC" frequency 3493442000 Hz quality 3000
+uhub0 at usb0: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub0: 3 ports with 3 removable, self powered
+uhub1 at usb1: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
+uhub1: 9 ports with 9 removable, self powered
+uhub2 at usb2: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 3.00/1.00, addr 0
+uhub2: 4 ports with 4 removable, self powered
+uhub3 at usb3: NetBSD (0x0000) xHCI root hub (0x0000), class 9/0, rev 2.00/1.00, addr 0
+uhub3: 4 ports with 4 removable, self powered
+ld0: GPT GUID: 9b94f472-237d-4601-b411-c7262ae07e17
+dk0 at ld0: "17abe03b-7c17-44cc-8dac-d3d56968b6b1", 262144 blocks at 2048, type: msdos
+dk1 at ld0: "c072c1e3-5d0b-4bd4-8789-7370295360e1", 134897664 blocks at 264192, type: ffs
+dk2 at ld0: "0291617a-ffbb-457e-b908-af9f61e5790f", 67010560 blocks at 135161856, type: swap
+dk3 at ld0: "ca370a40-b6d3-4b0a-9270-00acc6df4e2b", 419430400 blocks at 202172416, type: ffs
+dk4 at ld0: "8ae92095-2b67-450a-b3ac-32c912b78f08", 1331922319 blocks at 621602816, type: ffs
+IPsec: Initialized Security Association Processing.
+ahcisata0 port 0: device present, speed: 6.0Gb/s
+ahcisata0 port 1: device present, speed: 1.5Gb/s
+uhub4 at uhub1 port 3: Genesys Logic (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/60.90, addr 1
+uhub4: single transaction translator
+uhub4: 4 ports with 4 removable, self powered
+uhub5 at uhub3 port 2: GenesysLogic (0x05e3) USB2.1 Hub (0x0610), class 9/0, rev 2.10/66.02, addr 1
+uhub5: multiple transaction translators
+uhub5: 3 ports with 2 removable, self powered
+umass0 at uhub2 port 1 configuration 1 interface 0
+umass0: Generic (0x21c4) USB Storage (0xb064), rev 3.20/0.09, addr 2
+umass0: using SCSI over Bulk-Only
+scsibus0 at umass0: 2 targets, 3 luns per target
+sd0 at scsibus0 target 0 lun 0: <Generic, MassStorageClass, 0009> disk removable
+sd0: drive offline
+autoconfiguration error: sd0: unable to open device, error = 19
+sd1 at scsibus0 target 0 lun 1: <Generic, MassStorageClass, 0009> disk removable
+sd1: drive offline
+autoconfiguration error: sd1: unable to open device, error = 19
+sd2 at scsibus0 target 0 lun 2: <Generic, MassStorageClass, 0009> disk removable
+sd2: drive offline
+autoconfiguration error: sd2: unable to open device, error = 19
+uhub6 at uhub2 port 2: GenesysLogic (0x05e3) USB3.1 Hub (0x0620), class 9/0, rev 3.20/66.02, addr 3
+uhub6: 2 ports with 2 removable, self powered
+uhidev0 at uhub5 port 3 configuration 1 interface 1
+uhidev0: ENE (0x0cf2) AGON3 Light FX Device (0x7750), rev 2.00/1.00, addr 4, iclass 3/0
+uhidev0: 236 report ids
+uhid0 at uhidev0 reportid 236: input=64, output=64, feature=0
+ubt0 at uhub4 port 4
+ubt0: Cambridge Silicon Radio (0x0a12) BT DONGLE10 (0x0001), rev 2.00/88.91, addr 2
+wd0 at atabus0 drive 0
+wd0: <ADATA SU650>
+wd0: drive supports 16-sector PIO transfers, LBA48 addressing
+wd0: 223 GB, 465141 cyl, 16 head, 63 sec, 512 bytes/sect x 468862128 sectors
+wd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133), WRITE DMA FUA, NCQ (32 tags)
+wd0(ahcisata0:0:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 6 (Ultra/133) (using DMA), NCQ (31 tags)
+atapibus0 at atabus1: 1 targets
+cd0 at atapibus0 drive 0: <HL-DT-ST DVDRAM GH22NS40, K5I98JK5513, NL01> cdrom removable
+cd0: drive supports PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100)
+cd0(ahcisata0:1:0): using PIO mode 4, DMA mode 2, Ultra-DMA mode 5 (Ultra/100) (using DMA)
+uhub7 at uhub3 port 3: VIA Labs, Inc. (0x2109) USB2.0 Hub (0x2817), class 9/0, rev 2.10/90.23, addr 5
+uhub7: multiple transaction translators
+uhub7: 4 ports with 4 removable, self powered
+uhub8 at uhub2 port 3: VIA Labs, Inc. (0x2109) USB3.0 Hub (0x0817), class 9/0, rev 3.10/90.23, addr 6
+uhub8: 4 ports with 4 removable, self powered
+uhidev1 at uhub1 port 4 configuration 1 interface 0
+uhidev1: ITE Tech. Inc. (0x048d) ITE Device (0x5702), rev 2.00/0.01, addr 3, iclass 3/0
+uhidev1: 204 report ids
+uhid1 at uhidev1 reportid 90: input=0, output=0, feature=16
+uhid2 at uhidev1 reportid 204: input=0, output=0, feature=63
+umass1 at uhub2 port 4 configuration 1 interface 0
+umass1: StoreJet Transcend (0x174c) StoreJet Transcend (0x5106), rev 3.00/80.00, addr 7
+umass1: using SCSI over Bulk-Only
+scsibus1 at umass1: 2 targets, 1 lun per target
+sd3 at scsibus1 target 0 lun 0: <StoreJet, Transcend, 0> disk fixed
+sd3: 238 GB, 16383 cyl, 16 head, 63 sec, 512 bytes/sect x 500118192 sectors
+uhub9 at uhub7 port 2: Genesys Logic (0x05e3) USB2.0 Hub (0x0608), class 9/0, rev 2.00/32.98, addr 8
+uhub9: single transaction translator
+uhub9: 4 ports with 4 removable, self powered
+uhidev2 at uhub9 port 2 configuration 1 interface 0
+uhidev2: Fnatic Gear (0x195d) RUSH Mechanical Keyboard (0x2030), rev 2.00/1.09, addr 9, iclass 3/1
+ukbd0 at uhidev2
+wskbd0 at ukbd0: console keyboard
+uhidev3 at uhub9 port 2 configuration 1 interface 1
+uhidev3: Fnatic Gear (0x195d) RUSH Mechanical Keyboard (0x2030), rev 2.00/1.09, addr 9, iclass 3/0
+uhid3 at uhidev3: input=4, output=0, feature=0
+uhidev4 at uhub9 port 2 configuration 1 interface 2
+uhidev4: Fnatic Gear (0x195d) RUSH Mechanical Keyboard (0x2030), rev 2.00/1.09, addr 9, iclass 3/0
+ukbd1 at uhidev4
+wskbd1 at ukbd1 mux 1
+uhidev5 at uhub7 port 3 configuration 1 interface 0
+uhidev5: Kensington (0x047d) Orbit Fusion Wireless Trackball (0x807b), rev 1.10/10.01, addr 10, iclass 3/1
+ums0 at uhidev5: 8 buttons, W and Z dirs
+wsmouse0 at ums0 mux 0
+uhidev6 at uhub7 port 3 configuration 1 interface 1
+uhidev6: Kensington (0x047d) Orbit Fusion Wireless Trackball (0x807b), rev 1.10/10.01, addr 10, iclass 3/0
+uhidev6: 1 report ids
+uhid4 at uhidev6 reportid 1: input=2, output=0, feature=0
+uhidev7 at uhub7 port 3 configuration 1 interface 2
+uhidev7: Kensington (0x047d) Orbit Fusion Wireless Trackball (0x807b), rev 1.10/10.01, addr 10, iclass 3/0
+uhid5 at uhidev7: input=16, output=16, feature=0
+uaudio0 at uhub7 port 4 configuration 1 interface 0
+uaudio0: C-Media Electronics Inc. (0x0d8c) Genesis Radium 100 (0x0014), rev 1.10/1.00, addr 11
+uaudio0: audio rev 1.00
+audio2 at uaudio0: playback, capture, full duplex, independent
+audio2: slinear_le:16 2ch 48000Hz, blk 11520 bytes (60ms) for playback
+audio2: slinear_le:16 1ch 48000Hz, blk 6000 bytes (62.5ms) for recording
+spkr3 at audio2: PC Speaker (synthesized)
+wsbell at spkr3 not configured
+uhidev8 at uhub7 port 4 configuration 1 interface 3
+uhidev8: C-Media Electronics Inc. (0x0d8c) Genesis Radium 100 (0x0014), rev 1.10/1.00, addr 11, iclass 3/0
+uhid6 at uhidev8: input=4, output=4, feature=0
+swwdog0: software watchdog initialized
+WARNING: 5 errors while detecting hardware; check system log.
+boot device: ld0
+root on dk1 dumps on dk2
+root file system type: ffs
+kern.module.path=/stand/amd64/10.0/modules
+[drm] initializing kernel modesetting (NAVI10 0x1002:0x731F 0x1DA2:0xE411 0xC1).
+[drm] register mmio base: 0xFCA00000
+[drm] register mmio size: 524288
+[drm] set register base offset for ATHUB
+[drm] set register base offset for CLKA
+[drm] set register base offset for CLKA
+[drm] set register base offset for CLKA
+[drm] set register base offset for CLKA
+[drm] set register base offset for CLKA
+[drm] set register base offset for DF
+[drm] set register base offset for DMU
+[drm] set register base offset for GC
+[drm] set register base offset for HDP
+[drm] set register base offset for MMHUB
+[drm] set register base offset for MP0
+[drm] set register base offset for MP1
+[drm] set register base offset for NBIF
+[drm] set register base offset for NBIF
+[drm] set register base offset for OSSSYS
+[drm] set register base offset for SDMA0
+[drm] set register base offset for SDMA1
+[drm] set register base offset for SMUIO
+[drm] set register base offset for THM
+[drm] set register base offset for UVD
+[drm] add ip block number 0 <nv_common>
+[drm] add ip block number 1 <gmc_v10_0>
+[drm] add ip block number 2 <navi10_ih>
+[drm] add ip block number 3 <psp>
+[drm] add ip block number 4 <smu>
+[drm] add ip block number 5 <dm>
+[drm] add ip block number 6 <gfx_v10_0>
+[drm] add ip block number 7 <sdma_v5_0>
+[drm] add ip block number 8 <vcn_v2_0>
+[drm] add ip block number 9 <jpeg_v2_0>
+ATOM BIOS: 113-1E4112U-O45
+[drm] VCN decode is enabled in VM mode
+[drm] VCN encode is enabled in VM mode
+[drm] JPEG decode is enabled in VM mode
+[drm] vm size is 262144 GB, 4 levels, block size is 9-bit, fragment size is 9-bit
+amdgpu0: VRAM: 8176M 0x0000008000000000 - 0x00000081FEFFFFFF (8176M used)
+amdgpu0: GART: 512M 0x0000000000000000 - 0x000000001FFFFFFF
+[drm] Detected VRAM RAM=8176M, BAR=256M
+[drm] RAM width 256bits GDDR6
+Zone  kernel: Available graphics memory: 9007199253296414 KiB
+Zone   dma32: Available graphics memory: 2097152 KiB
+[drm] amdgpu: 8176M of VRAM memory ready
+[drm] amdgpu: 8176M of GTT memory ready.
+[drm] GART: num cpu pages 131072, num gpu pages 131072
+[drm] PCIE GART of 512M enabled (table at 0x0000008000300000).
+amdgpu0: interrupting at msi7 vec 0 (amdgpu0)
+[drm] use_doorbell being set to: [true]
+[drm] use_doorbell being set to: [true]
+[drm] Found VCN firmware Version ENC: 1.14 DEC: 5 VEP: 0 Revision: 20
+[drm] PSP loading VCN firmware
+[drm] reserve 0x900000 from 0x81fe400000 for PSP TMR
+amdgpu0: warn: RAS: ras ta ucode is not available
+use vbios provided pptable
+smu driver if version = 0x00000033, smu fw if version = 0x00000037, smu fw version = 0x002a4000 (42.64.0)
+SMU driver if version not matched
+OD: Gfxclk: (800, 2054)
+OD: Gfx1: (800, 2858)
+OD: Gfx2: (1427, 3267)
+OD: Gfx3: (2054, 4780)
+OD: UclkFmax: 875
+OD: OverDrivePct: 0
+SMU is initialized successfully!
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 408289520
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 408289520
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 408289520
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 408289520
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 408289520
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 408289520
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 86  data: 1482031344
+[drm] Display Core initialized with v3.2.69!
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 84  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 84  data: 1
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 84  data: 0
+[BIOS]:transmitter_control_v1_6:ps.param.symclk_10khz = 54000
+[HW_LINK_TRAINING]:dpcd_set_link_settings
+ 100 rate = 14
+ 101 lane = 4 framing = 1
+ 107 spread = 10
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings
+ 0x102 pattern = 1
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings:
+ 0x102 VS set = 0  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 100
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 0
+ 0x203 Lane23Status = 0
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 11
+ 0x207 Lane23AdjustRequest = 11
+[HW_LINK_TRAINING]:dpcd_set_lane_settings
+ 0x103 VS set = 1  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 100
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 0
+ 0x203 Lane23Status = 0
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 22
+ 0x207 Lane23AdjustRequest = 22
+[HW_LINK_TRAINING]:dpcd_set_lane_settings
+ 0x103 VS set = 2  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 100
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 11
+ 0x203 Lane23Status = 11
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 22
+ 0x207 Lane23AdjustRequest = 22
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings
+ 0x102 pattern = 3
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings:
+ 0x102 VS set = 2  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 400
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 77
+ 0x203 Lane23Status = 77
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 22
+ 0x207 Lane23AdjustRequest = 22
+[HW_LINK_TRAINING]:dpcd_set_training_pattern
+ 102 pattern = 0
+[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[drm] Driver supports precise vblank timestamp query.
+[drm] kiq ring mec 2 pipe 1 q 0
+[drm] VCN decode and encode initialized successfully(under DPG Mode).
+[drm] JPEG decode initialized successfully.
+amdgpufb0 at amdgpu0
+amdgpu0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+amdgpu0: ring gfx_0.1.0 uses VM inv eng 1 on hub 0
+amdgpu0: ring comp_1.0.0 uses VM inv eng 4 on hub 0
+amdgpu0: ring comp_1.1.0 uses VM inv eng 5 on hub 0
+amdgpu0: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+amdgpu0: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+amdgpu0: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+amdgpu0: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+amdgpu0: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+amdgpu0: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+amdgpu0: ring kiq_2.1.0 uses VM inv eng 12 on hub 0
+amdgpu0: ring sdma0 uses VM inv eng 13 on hub 0
+amdgpu0: ring sdma1 uses VM inv eng 14 on hub 0
+amdgpu0: ring vcn_dec uses VM inv eng 0 on hub 1
+amdgpu0: ring vcn_enc0 uses VM inv eng 1 on hub 1
+amdgpu0: ring vcn_enc1 uses VM inv eng 4 on hub 1
+amdgpu0: ring jpeg_dec uses VM inv eng 5 on hub 1
+[drm] Initialized amdgpu 3.36.0 20150101 for amdgpu0 on minor 0
+amdgpufb0: framebuffer at 0xd04c9000, size 2560x1440, depth 32, stride 10240
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:2560 x:0 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:2560 x:0 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:1280 x:0 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:1280 x:1280 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    t_mclk_wm_us         =   f
+[DML]:DML_RQ_DLG_CALC:    t_urg_wm_us          =   f
+[DML]:DML_RQ_DLG_CALC:    t_sr_wm_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_extra_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_srx_delay_us       =   f
+[DML]:DML_RQ_DLG_CALC:    deepsleep_dcfclk_mhz =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bw        =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bytes     = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[0] start
+
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  cstate_en = 1
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  pstate_en = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dppclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dispclk_freq_in_mhz    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pclk_freq_in_mhz       =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: interlaced             = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dcfclk_mhz                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_ttu_vblank                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dst_y_ttu_vblank                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: t_calc_us                              =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: disp_dlg_regs->min_dst_y_next_start    = 0x1769
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: ref_freq_to_pix_freq                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: htotal                                 = 2817
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pixel_rate_delay_subtotal              = 310
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_x_after_scaler                     = 1590
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_after_scaler                     = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_prefetch (after rnd) =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_vm_vblank    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_row_vblank   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: lsw =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_l=  f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_c=  f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: full_recout_width              = 2560
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: hscale_pixel_rate_l            =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_l     =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_l     =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_TTU_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    qos_level_low_wm                  = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_high_wm                 = 0x328
+[DML]:DML_RQ_DLG_CALC:    min_ttu_vblank                    = 0x388
+[DML]:DML_RQ_DLG_CALC:    qos_level_flip                    = 0xe
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_l     = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_l         = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur0      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur0  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur1      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur1  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_l                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_l                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_c                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_c                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur0              = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur0             = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur1              = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur1             = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DLG_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    refcyc_h_blank_end              = 0x11
+[DML]:DML_RQ_DLG_CALC:    dlg_vblank_end                  = 0x36
+[DML]:DML_RQ_DLG_CALC:    min_dst_y_next_start            = 0x1769
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_htotal               = 0xca17
+[DML]:DML_RQ_DLG_CALC:    refcyc_x_after_scaler           = 0x72
+[DML]:DML_RQ_DLG_CALC:    dst_y_after_scaler              = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_prefetch                  = 0xc
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_vblank             = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_vblank            = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_flip               = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_flip              = 0x0
+[DML]:DML_RQ_DLG_CALC:    ref_freq_to_pix_freq            = 0x92ec
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch                 = 0x80000
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch_c               = 0x80000
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_l   = 0x4b
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_c   = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_l  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_c  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_l     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_l    = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_c    = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_l         = 0x200
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_l      = 0x3285
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_l        = 0x20
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_c        = 0x20
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_l     = 0x650
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_l  = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_c  = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_l      = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur0           = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_offset_cur1               = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur1           = 0x3
+[DML]:DML_RQ_DLG_CALC:    vready_after_vcount0            = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_delta_drq_limit           = 0x7fff
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_transfer_delay          = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_precharge_delay         = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_remote_surface_flip_latency = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_vm_dmdata            = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[0] end
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: extract_rq_sizing_regs: rq_sizing param
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x3
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x3
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x1
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x3
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x4
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:    drq_expansion_mode  = 0x2
+[DML]:DML_RQ_DLG_CALC:    prq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    mrq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    crq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    plane1_base_address = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    t_mclk_wm_us         =   f
+[DML]:DML_RQ_DLG_CALC:    t_urg_wm_us          =   f
+[DML]:DML_RQ_DLG_CALC:    t_sr_wm_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_extra_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_srx_delay_us       =   f
+[DML]:DML_RQ_DLG_CALC:    deepsleep_dcfclk_mhz =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bw        =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bytes     = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[1] start
+
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  cstate_en = 1
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  pstate_en = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dppclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dispclk_freq_in_mhz    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pclk_freq_in_mhz       =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: interlaced             = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dcfclk_mhz                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_ttu_vblank                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dst_y_ttu_vblank                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: t_calc_us                              =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: disp_dlg_regs->min_dst_y_next_start    = 0x1769
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: ref_freq_to_pix_freq                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: htotal                                 = 2817
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pixel_rate_delay_subtotal              = 310
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_x_after_scaler                     = 1590
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_after_scaler                     = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_prefetch (after rnd) =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_vm_vblank    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_row_vblank   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: lsw =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_l=  f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_c=  f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: full_recout_width              = 2560
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: hscale_pixel_rate_l            =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_l     =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_l     =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_TTU_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    qos_level_low_wm                  = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_high_wm                 = 0x328
+[DML]:DML_RQ_DLG_CALC:    min_ttu_vblank                    = 0x388
+[DML]:DML_RQ_DLG_CALC:    qos_level_flip                    = 0xe
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_l     = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_l         = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur0      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur0  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur1      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur1  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_l                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_l                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_c                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_c                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur0              = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur0             = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur1              = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur1             = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DLG_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    refcyc_h_blank_end              = 0x11
+[DML]:DML_RQ_DLG_CALC:    dlg_vblank_end                  = 0x36
+[DML]:DML_RQ_DLG_CALC:    min_dst_y_next_start            = 0x1769
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_htotal               = 0xca17
+[DML]:DML_RQ_DLG_CALC:    refcyc_x_after_scaler           = 0x72
+[DML]:DML_RQ_DLG_CALC:    dst_y_after_scaler              = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_prefetch                  = 0xc
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_vblank             = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_vblank            = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_flip               = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_flip              = 0x0
+[DML]:DML_RQ_DLG_CALC:    ref_freq_to_pix_freq            = 0x92ec
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch                 = 0x80000
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch_c               = 0x80000
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_l   = 0x4b
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_c   = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_l  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_c  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_l     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_l    = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_c    = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_l         = 0x200
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_l      = 0x3285
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_l        = 0x20
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_c        = 0x20
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_l     = 0x650
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_l  = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_c  = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_l      = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur0           = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_offset_cur1               = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur1           = 0x3
+[DML]:DML_RQ_DLG_CALC:    vready_after_vcount0            = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_delta_drq_limit           = 0x7fff
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_transfer_delay          = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_precharge_delay         = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_remote_surface_flip_latency = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_vm_dmdata            = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[1] end
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: extract_rq_sizing_regs: rq_sizing param
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x3
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x3
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x1
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x3
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x4
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:    drq_expansion_mode  = 0x2
+[DML]:DML_RQ_DLG_CALC:    prq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    mrq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    crq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    plane1_base_address = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:1280 x:0 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:1280 x:1280 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:2560 x:0 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML: VStartup: 60
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:1280 x:0 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[SCALER]:resource_build_scaling_params: Viewport:
+height:1440 width:1280 x:1280 y:0
+ dst_rect:
+height:1440 width:2560 x:0 y:0
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:   dispclk_mhz (calculated) = f[DML]:   dppclk_mhz[0] (calculated) = f[DML]:   dcfclk_mhz         = f[DML]:   return_bw_to_dcn   = f[DML]:   return_bus_bw      = f[DML]:   read_bw[0] = fBps[DML]:   urgent_extra_latency = fus[DML]:   wm_urgent = fus[DML]:   wm_wb_urgent = fus[DML]:   wm_pstate_change = fus[DML]:   calculating wb pstate watermark[DML]:      total wb outputs 0[DML]:      socclk frequency f Mhz[DML]:   wm_wb_pstate fus[DML]:   dcfclk_deepsleep_per_plane[0] = fMHz[DML]:   dcfclk_deepsleep_mhz = fMHz[DML]:   wm_cstate_exit       = fus[DML]:   wm_cstate_enter_exit = fus[DML]:DML: VStartup: 13
+[DML]:DML: TCalc: f
+[DML]:DML: TWait: f
+[DML]:DML: XFCRemoteSurfaceFlipDelay: f
+[DML]:DML: LineTime: f
+[DML]:DML: Tsetup: f
+[DML]:DML: Tdm: f
+[DML]:DML: DSTYAfterScaler: f
+[DML]:DML: DSTXAfterScaler: f
+[DML]:DML: HTotal: 2817
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    t_mclk_wm_us         =   f
+[DML]:DML_RQ_DLG_CALC:    t_urg_wm_us          =   f
+[DML]:DML_RQ_DLG_CALC:    t_sr_wm_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_extra_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_srx_delay_us       =   f
+[DML]:DML_RQ_DLG_CALC:    deepsleep_dcfclk_mhz =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bw        =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bytes     = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[0] start
+
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  cstate_en = 1
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  pstate_en = 1
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dppclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dispclk_freq_in_mhz    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pclk_freq_in_mhz       =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: interlaced             = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dcfclk_mhz                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_ttu_vblank                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dst_y_ttu_vblank                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: t_calc_us                              =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: disp_dlg_regs->min_dst_y_next_start    = 0x1769
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: ref_freq_to_pix_freq                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: htotal                                 = 2817
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pixel_rate_delay_subtotal              = 310
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_x_after_scaler                     = 1590
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_after_scaler                     = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_prefetch (after rnd) =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_vm_vblank    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_row_vblank   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: lsw =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_l=  f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_c=  f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: full_recout_width              = 2560
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: hscale_pixel_rate_l            =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_l     =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_l     =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_TTU_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    qos_level_low_wm                  = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_high_wm                 = 0x328
+[DML]:DML_RQ_DLG_CALC:    min_ttu_vblank                    = 0x388
+[DML]:DML_RQ_DLG_CALC:    qos_level_flip                    = 0xe
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_l     = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_l         = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur0      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur0  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur1      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur1  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_l                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_l                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_c                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_c                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur0              = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur0             = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur1              = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur1             = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DLG_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    refcyc_h_blank_end              = 0x11
+[DML]:DML_RQ_DLG_CALC:    dlg_vblank_end                  = 0x36
+[DML]:DML_RQ_DLG_CALC:    min_dst_y_next_start            = 0x1769
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_htotal               = 0xca17
+[DML]:DML_RQ_DLG_CALC:    refcyc_x_after_scaler           = 0x72
+[DML]:DML_RQ_DLG_CALC:    dst_y_after_scaler              = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_prefetch                  = 0xc
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_vblank             = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_vblank            = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_flip               = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_flip              = 0x0
+[DML]:DML_RQ_DLG_CALC:    ref_freq_to_pix_freq            = 0x92ec
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch                 = 0x80000
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch_c               = 0x80000
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_l   = 0x4b
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_c   = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_l  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_c  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_l     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_l    = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_c    = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_l         = 0x200
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_l      = 0x3285
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_l        = 0x20
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_c        = 0x20
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_l     = 0x650
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_l  = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_c  = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_l      = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur0           = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_offset_cur1               = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur1           = 0x3
+[DML]:DML_RQ_DLG_CALC:    vready_after_vcount0            = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_delta_drq_limit           = 0x7fff
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_transfer_delay          = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_precharge_delay         = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_remote_surface_flip_latency = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_vm_dmdata            = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[0] end
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: extract_rq_sizing_regs: rq_sizing param
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x3
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x3
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x1
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x3
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x4
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:    drq_expansion_mode  = 0x2
+[DML]:DML_RQ_DLG_CALC:    prq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    mrq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    crq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    plane1_base_address = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    t_mclk_wm_us         =   f
+[DML]:DML_RQ_DLG_CALC:    t_urg_wm_us          =   f
+[DML]:DML_RQ_DLG_CALC:    t_sr_wm_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_extra_us           =   f
+[DML]:DML_RQ_DLG_CALC:    t_srx_delay_us       =   f
+[DML]:DML_RQ_DLG_CALC:    deepsleep_dcfclk_mhz =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bw        =   f
+[DML]:DML_RQ_DLG_CALC:    total_flip_bytes     = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[1] start
+
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  cstate_en = 1
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params:  pstate_en = 1
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dppclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dispclk_freq_in_mhz    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refclk_freq_in_mhz     =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pclk_freq_in_mhz       =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: interlaced             = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dcfclk_mhz                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_ttu_vblank                         =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: min_dst_y_ttu_vblank                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: t_calc_us                              =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: disp_dlg_regs->min_dst_y_next_start    = 0x1769
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: ref_freq_to_pix_freq                   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: htotal                                 = 2817
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: pixel_rate_delay_subtotal              = 310
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_x_after_scaler                     = 1590
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_after_scaler                     = 0
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_prefetch (after rnd) =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_vm_vblank    =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: dst_y_per_row_vblank   =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: lsw =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_l=  f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: vratio_pre_c=  f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 1
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: full_recout_width              = 2560
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: hscale_pixel_rate_l            =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_line_delivery_l     =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: get_refcyc_per_delivery: refclk_freq_in_mhz =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: pclk_freq_in_mhz   =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: recout_width       = 2560
+[DML]:DML_DLG: get_refcyc_per_delivery: vratio             =   f
+[DML]:DML_DLG: get_refcyc_per_delivery: req_per_swath_ub   = 21
+[DML]:DML_DLG: get_refcyc_per_delivery: refcyc_per_delivery=   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_pre_l =   f
+[DML]:DML_DLG: dml20v2_rq_dlg_get_dlg_params: refcyc_per_req_delivery_l     =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_width                     = 64
+[DML]:DML_DLG: calculate_ttu_cursor: cur_width_ub                      =   f
+[DML]:DML_DLG: calculate_ttu_cursor: cur_req_per_width                 =   f
+[DML]:DML_DLG: calculate_ttu_cursor: hactive_cur                       =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_pre_cur   =   f
+[DML]:DML_DLG: calculate_ttu_cursor: refcyc_per_req_delivery_cur       =   f
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_TTU_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    qos_level_low_wm                  = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_high_wm                 = 0x328
+[DML]:DML_RQ_DLG_CALC:    min_ttu_vblank                    = 0x388
+[DML]:DML_RQ_DLG_CALC:    qos_level_flip                    = 0xe
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_l     = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_l         = 0x22fb
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur0      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur0  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_cur1      = 0x125d
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_req_delivery_pre_cur1  = 0x125d
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_l                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_l                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_c                 = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_c                = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur0              = 0x8
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur0             = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_level_fixed_cur1              = 0x0
+[DML]:DML_RQ_DLG_CALC:    qos_ramp_disable_cur1             = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DLG_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    refcyc_h_blank_end              = 0x11
+[DML]:DML_RQ_DLG_CALC:    dlg_vblank_end                  = 0x36
+[DML]:DML_RQ_DLG_CALC:    min_dst_y_next_start            = 0x1769
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_htotal               = 0xca17
+[DML]:DML_RQ_DLG_CALC:    refcyc_x_after_scaler           = 0x72
+[DML]:DML_RQ_DLG_CALC:    dst_y_after_scaler              = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_prefetch                  = 0xc
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_vblank             = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_vblank            = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_vm_flip               = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_row_flip              = 0x0
+[DML]:DML_RQ_DLG_CALC:    ref_freq_to_pix_freq            = 0x92ec
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch                 = 0x80000
+[DML]:DML_RQ_DLG_CALC:    vratio_prefetch_c               = 0x80000
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_l   = 0x4b
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_vblank_c   = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_l  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_vblank_c  = 0x97
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_l     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_flip_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_l    = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_flip_c    = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_l         = 0x200
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_pte_row_nom_c         = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_l      = 0x3285
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_pte_group_nom_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_l        = 0x20
+[DML]:DML_RQ_DLG_CALC:    dst_y_per_meta_row_nom_c        = 0x20
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_l     = 0x650
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_meta_chunk_nom_c     = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_l  = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_pre_c  = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_l      = 0xb7
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_line_delivery_c      = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur0           = 0x3
+[DML]:DML_RQ_DLG_CALC:    dst_y_offset_cur1               = 0x0
+[DML]:DML_RQ_DLG_CALC:    chunk_hdl_adjust_cur1           = 0x3
+[DML]:DML_RQ_DLG_CALC:    vready_after_vcount0            = 0x1
+[DML]:DML_RQ_DLG_CALC:    dst_y_delta_drq_limit           = 0x7fff
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_transfer_delay          = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_precharge_delay         = 0x0
+[DML]:DML_RQ_DLG_CALC:    xfc_reg_remote_surface_flip_latency = 0x0
+[DML]:DML_RQ_DLG_CALC:    refcyc_per_vm_dmdata            = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_DLG: Calculation for pipe[1] end
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_linear        = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: surf_vert          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_width       = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: blk256_height      = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_height             = 64
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_blk_width              = 4096
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_surface_bytes          = 0
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_req_per_frame_ub   = 1
+[DML]:DML_DLG: get_meta_and_pte_attr: meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_DLG: handle_det_buf_split: req128_l = 0
+[DML]:DML_DLG: handle_det_buf_split: req128_c = 0
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_l = 5376
+[DML]:DML_DLG: handle_det_buf_split: full_swath_bytes_packed_c = 0
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA> ===
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 1344
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 21
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 64
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 41
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 2
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 128
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 2624
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 1
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 4
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 8
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 256
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_DLG_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    swath_width_ub              = 0
+[DML]:DML_RQ_DLG_CALC:    swath_height                = 1
+[DML]:DML_RQ_DLG_CALC:    req_per_swath_ub            = 0
+[DML]:DML_RQ_DLG_CALC:    meta_pte_bytes_per_frame_ub = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_groups_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    dpte_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC:    meta_chunks_per_row_ub      = 0
+[DML]:DML_RQ_DLG_CALC:    meta_req_per_row_ub         = 0
+[DML]:DML_RQ_DLG_CALC:    meta_row_height             = 0
+[DML]:DML_RQ_DLG_CALC:    meta_bytes_per_row_ub       = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 5376
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 10752
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 64
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 1
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_MISC_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:     full_swath_bytes   = 0
+[DML]:DML_RQ_DLG_CALC:     stored_swath_bytes = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_width       = 0
+[DML]:DML_RQ_DLG_CALC:     blk256_height      = 0
+[DML]:DML_RQ_DLG_CALC:     req_width          = 0
+[DML]:DML_RQ_DLG_CALC:     req_height         = 0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: ***************************
+[DML]:DML_DLG: extract_rq_sizing_regs: rq_sizing param
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_SIZING_PARAM_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_bytes           = 8192
+[DML]:DML_RQ_DLG_CALC:    min_chunk_bytes       = 1024
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_bytes  = 256
+[DML]:DML_RQ_DLG_CALC:    mpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC:    dpte_group_bytes      = 2048
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:  <LUMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x3
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x3
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x1
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x3
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x5
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x4
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:  <CHROMA>
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC: DISPLAY_DATA_RQ_REGS_ST
+[DML]:DML_RQ_DLG_CALC:    chunk_size              = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_chunk_size          = 0x0
+[DML]:DML_RQ_DLG_CALC:    meta_chunk_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    min_meta_chunk_size     = 0x0
+[DML]:DML_RQ_DLG_CALC:    dpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    mpte_group_size         = 0x0
+[DML]:DML_RQ_DLG_CALC:    swath_height            = 0x0
+[DML]:DML_RQ_DLG_CALC:    pte_row_height_linear   = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[DML]:DML_RQ_DLG_CALC:    drq_expansion_mode  = 0x2
+[DML]:DML_RQ_DLG_CALC:    prq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    mrq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    crq_expansion_mode  = 0x1
+[DML]:DML_RQ_DLG_CALC:    plane1_base_address = 0x0
+[DML]:DML_RQ_DLG_CALC: =====================================
+[BIOS]:set_pixel_clock_v7:program display clock = 0, tg = 255, pll = 20, colorDepth = 0
+[BIOS]:set_pixel_clock_v7:program display clock = 0, tg = 255, pll = 21, colorDepth = 0
+[BIOS]:set_pixel_clock_v7:program display clock = 0, tg = 255, pll = 22, colorDepth = 0
+[BIOS]:set_pixel_clock_v7:program display clock = 0, tg = 255, pll = 23, colorDepth = 0
+[BIOS]:set_pixel_clock_v7:program display clock = 0, tg = 255, pll = 24, colorDepth = 0
+[BIOS]:set_pixel_clock_v7:program display clock = 0, tg = 255, pll = 25, colorDepth = 0
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_A calculated =10646
+HW register value = 0x214
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_A calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_B calculated =10239
+HW register value = 0x1ff
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_B calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_C calculated =8989
+HW register value = 0x1c1
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_C calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_D calculated =8989
+HW register value = 0x1c1
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_D calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_A calculated =17546
+HW register value = 0x36d
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_A calculated =15475
+HW register value = 0x305
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_B calculated =17139
+HW register value = 0x358
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_B calculated =15068
+HW register value = 0x2f1
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_C calculated =15889
+HW register value = 0x31a
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_C calculated =13819
+HW register value = 0x2b2
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_D calculated =15889
+HW register value = 0x31a
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_D calculated =13819
+HW register value = 0x2b2
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_A calculated =40646
+HW register value = 0x7f0
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_B calculated =40239
+HW register value = 0x7db
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_C calculated =38989
+HW register value = 0x79d
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_D calculated =38989
+HW register value = 0x79d
+
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 84  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 84  data: 1
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 37  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 37  data: 131073
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 40  data: 117901057
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 41  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 42  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 43  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 44  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 45  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 46  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 47  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 49  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 50  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 51  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 53  data: 0
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 56  data: 1
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 56  data: 1
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 55  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 55  data: 0
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 55  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 55  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 58  data: 913509922
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 59  data: 13
+[HW_AUDIO]:
+	AUDIO:az_configure: index: 2 data, 0xd, displayName OMEN 27i IPS: 
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 60  data: 1431864734
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 61  data: 228103241
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 62  data: 1313164623
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 63  data: 1765224992
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 64  data: 1397770528
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 65  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 66  data: 0
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 84  data: 17
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 84  data: 16
+[BIOS]:set_pixel_clock_v7:program display clock = 6969600, tg = 0, pll = 11, colorDepth = 0
+[BIOS]:transmitter_control_v1_6:ps.param.symclk_10khz = 54000
+[HW_LINK_TRAINING]:dpcd_set_link_settings
+ 100 rate = 14
+ 101 lane = 4 framing = 1
+ 107 spread = 10
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings
+ 0x102 pattern = 1
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings:
+ 0x102 VS set = 0  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 100
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 0
+ 0x203 Lane23Status = 0
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 11
+ 0x207 Lane23AdjustRequest = 11
+[HW_LINK_TRAINING]:dpcd_set_lane_settings
+ 0x103 VS set = 1  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 100
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 0
+ 0x203 Lane23Status = 0
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 22
+ 0x207 Lane23AdjustRequest = 22
+[HW_LINK_TRAINING]:dpcd_set_lane_settings
+ 0x103 VS set = 2  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 100
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 11
+ 0x203 Lane23Status = 11
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 22
+ 0x207 Lane23AdjustRequest = 22
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings
+ 0x102 pattern = 3
+[HW_LINK_TRAINING]:dpcd_set_lt_pattern_and_lane_settings:
+ 0x102 VS set = 2  PE set = 0 max VS Reached = 0  max PE Reached = 0
+[HW_LINK_TRAINING]:wait_for_training_aux_rd_interval:
+ wait = 400
+[HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x202 Lane01Status = 77
+ 0x203 Lane23Status = 77
+ [HW_LINK_TRAINING]:get_lane_status_and_drive_settings:
+ 0x206 Lane01AdjustRequest = 22
+ 0x207 Lane23AdjustRequest = 22
+[HW_LINK_TRAINING]:dpcd_set_training_pattern
+ 102 pattern = 0
+[HW_AUDIO]:AUDIO:read_indirect_azalia_reg: index: 84  data: 0
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 84  data: 2147483649
+[HW_AUDIO]:AUDIO:write_indirect_azalia_reg: index: 84  data: 2147483648
+[HW_AUDIO]:
+	========= AUDIO:dce_aud_az_enable: index: 2  data: 0x80000000
+[HDCP_TOP]:
+[HDCP_TOP]:[Link 0] mod_hdcp_add_display display 1[BANDWIDTH_CALCS]:URGENCY_WATERMARK_A calculated =10646
+HW register value = 0x214
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_A calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_B calculated =10239
+HW register value = 0x1ff
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_B calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_C calculated =8989
+HW register value = 0x1c1
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_C calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:URGENCY_WATERMARK_D calculated =8989
+HW register value = 0x1c1
+[BANDWIDTH_CALCS]:PTE_META_URGENCY_WATERMARK_D calculated =4000
+HW register value = 0xc8
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_A calculated =17546
+HW register value = 0x36d
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_A calculated =15475
+HW register value = 0x305
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_B calculated =17139
+HW register value = 0x358
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_B calculated =15068
+HW register value = 0x2f1
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_C calculated =15889
+HW register value = 0x31a
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_C calculated =13819
+HW register value = 0x2b2
+[BANDWIDTH_CALCS]:SR_ENTER_EXIT_WATERMARK_D calculated =15889
+HW register value = 0x31a
+[BANDWIDTH_CALCS]:SR_EXIT_WATERMARK_D calculated =13819
+HW register value = 0x2b2
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_A calculated =40646
+HW register value = 0x7f0
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_B calculated =40239
+HW register value = 0x7db
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_C calculated =38989
+HW register value = 0x79d
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_D calculated =38989
+HW register value = 0x79d
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_A calculated =40646
+HW register value = 0x7f0
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_B calculated =40239
+HW register value = 0x7db
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_C calculated =38989
+HW register value = 0x79d
+
+[BANDWIDTH_CALCS]:DRAM_CLK_CHANGE_WATERMARK_D calculated =38989
+HW register value = 0x79d
+
+[BANDWIDTH_CALCS]:Current: dispclk_khz:707449  max_dppclk_khz:350222  dcfclk_khz:506000
+dcfclk_deep_sleep_khz:43560  fclk_khz:506000  socclk_khz:506000
+[BANDWIDTH_CALCS]:Calculated: dispclk_khz:707449  max_dppclk_khz:350222  dcfclk_khz:506000
+dcfclk_deep_sleep_khz:43560  fclk_khz:506000  socclk_khz:506000
+wsdisplay0 at amdgpufb0 kbdmux 1: console (default, vt100 emulation), using wskbd0
+wsmux1: connecting to wsdisplay0
+wskbd1: connecting to wsdisplay0
+{drm:netbsd:gfx_v10_0_ring_test_ib+0x179} *ERROR* amdgpu: IB test timed out.
+amdgpu0 {drm:netbsd:amdgpu_ib_ring_tests+0xdf} *ERROR* IB test failed on kiq_2.1.0 (-60).
+{drm:netbsd:linux_workqueue_thread+0x15e} *ERROR* ib ring test failed (-60).
+aq0: link is UP: speed=10000
+[HDCP_TOP]:[Link 0]	add display 1wsdisplay0: screen 1 added (default, vt100 emulation)
+wsdisplay0: screen 2 added (default, vt100 emulation)
+wsdisplay0: screen 3 added (default, vt100 emulation)
+wsdisplay0: screen 4 added (default, vt100 emulation)

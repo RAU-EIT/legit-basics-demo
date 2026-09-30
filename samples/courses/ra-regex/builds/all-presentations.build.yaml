@@ -1,0 +1,143 @@
+# all-presentations.build.yaml - a build file for revealjs presentations and student / instructor PDF printouts of those presentations
+
+builds:
+- desc: regex prez 01 intro
+  outputType: revealjs
+  skipBuild: false
+  debug: false
+  publication:
+    id: PUB123 
+    revisionDate: "June 2026"
+    classification: Internal
+  baseDirectory: output/courses/ra-regex/presentations/01-regex-intro
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/01-regex-intro/01-regex-intro # note the optional different subfolder as output
+  files:  # files array can have multiple markdown files in a single presentation (title slides beyond 1st are ignored)
+    - samples/outcomes/regex-intro/presentation.md
+- desc: regex prez 02 basics
+  skipBuild: false
+  outputType: revealjs
+  publication:
+    id: RAU011
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+  baseDirectory: output/courses/ra-regex/presentations/02-basic-regex
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/02-basic-regex/02-basic-regex # note the optional different subfolder as output
+  files:
+    - samples/outcomes/regex-basics/presentation.md
+- desc: regex prez 03 advanced
+  skipBuild: false
+  debug: false
+  outputType: revealjs
+  publication:
+    id: RAU010
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+  baseDirectory: output/courses/ra-regex/presentations/03-advanced-regex
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/presentations/03-advanced-regex/03-advanced-regex # note the optional different subfolder as output
+  files:
+    - samples/outcomes/regex-advanced/presentation.md
+- desc: regex intro presentation manual PDF (student)
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex/single-presentation-pdfs/student
+  outputFilename: output/courses/ra-regex/single-presentation-pdfs/student/01-regex-intro
+  print:
+    showNotes: false
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-intro/presentation.md
+- desc: regex intro presentation manual PDF (instructor)
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex/single-presentation-pdfs/instructor
+  outputFilename: output/courses/ra-regex/single-presentation-pdfs/instructor/01-regex-intro
+  print:
+    showNotes: true
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-intro/presentation.md
+- desc: regex basics presentation manual PDF (student)
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex/single-presentation-pdfs/student
+  outputFilename: output/courses/ra-regex/single-presentation-pdfs/student/02-regex-basics
+  print:
+    showNotes: false
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-basics/presentation.md
+- desc: regex basics presentation manual PDF (instructor)
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex/single-presentation-pdfs/instructor
+  outputFilename: output/courses/ra-regex/single-presentation-pdfs/instructor/02-regex-basics
+  print:
+    showNotes: true
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-basics/presentation.md
+- desc: regex advanced presentation manual PDF (student)
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex/single-presentation-pdfs/student
+  outputFilename: output/courses/ra-regex/single-presentation-pdfs/student/03-regex-advanced
+  print:
+    showNotes: false
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-basics/presentation.md
+- desc: regex advanced presentation manual PDF (instructor)
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: false
+  baseDirectory: output/courses/ra-regex/single-presentation-pdfs/instructor
+  outputFilename: output/courses/ra-regex/single-presentation-pdfs/instructor/03-regex-advanced
+  print:
+    showNotes: true
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-advanced/presentation.md

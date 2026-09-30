@@ -1,0 +1,19 @@
+---
+title: "Regular Expressions and Using Regex in VScode"
+subtitle: "Student Lessons"
+author: "Rockwell Automation"
+toc-title: "Table of Contents"
+# tagline that produces the standard customer training cover page
+tagline:
+    line1: Workforce
+    line2: development
+    line3: Expanding human possibility through learning
+publication:
+    publisher: RAU Internal
+    trainingType: standard
+    id: TST112
+    revisionDate: "June 2026"
+    classification: Internal
+varsGlobal:
+    example: something you want to define once and use repeatedly
+---

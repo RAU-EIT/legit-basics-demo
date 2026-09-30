@@ -1,0 +1,42 @@
+# build.yaml - a configuration for builds of content
+
+--- # start of yaml doc
+builds:
+- desc: sample SCORM module
+  debug: true
+  skipBuild: false
+  scorm:
+    title: Sample SCORM Module
+    subtitle: Examples of SCORM content
+    desc: | 
+      A sample module built from sample files for you to sample a sample of what the sample offers.
+      
+      <hr>
+      
+      This can be multiple lines and have *optional* **markdown** / <strong>html</strong> content inside.
+    sections:
+      - index: 0
+        title: First Group
+        files:
+          - samples/_template-files/e-learning/scorm-section-1-passives.md
+          - samples/_template-files/e-learning/scorm-section.md
+      - index: 1
+        title: Second Group
+        files:
+          - samples/_template-files/e-learning/scorm-section-2-interactives.md 
+      - index: 2
+        title: Quiz Section
+        files:
+          - samples/_template-files/e-learning/scorm-quiz.md
+  css: style-rau-base/rau-scorm.css
+  publication:
+    id: RAU003
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+  baseDirectory: output/courses/sample-scorm
+  outputType: scorm1.2 # print | presentation | scorm
+  outputFilename: output/courses/sample-scorm # no extension; determined by build-type
+  files: # one or more files, list order (top to bottom) is preserved in output document
+    - samples/_template-files/e-learning/scorm-section-1-passives.md 
+    - samples/_template-files/e-learning/scorm-section-2-interactives.md 
+    - samples/_template-files/e-learning/scorm-quiz.md

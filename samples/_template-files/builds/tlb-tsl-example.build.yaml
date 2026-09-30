@@ -1,0 +1,30 @@
+builds:
+  - desc: TSL example with all presentations
+    baseDirectory: output/courses/regex
+    outputFilename: output/courses/regex/regex-tsl
+    css: style-rau-base/rau-presentation-customer_print.css
+    outputType: print
+    print:
+      slideNotes: false # student lesson printouts do not include instructor notes   
+    files:
+      - samples\courses\ra-regex\TSL-frontcover.yaml
+      - samples\_template-files\print\user-info.md
+      - samples\_template-files\print\comments.md
+      - samples\outcomes\regex-intro\presentation.md
+      - samples\outcomes\regex-basics\presentation.md
+      - samples\outcomes\regex-advanced\presentation.md
+      - samples\_template-files\print\backcover.md
+  - desc: TLB example with all lab exercises
+    baseDirectory: output/courses/regex
+    outputFilename: output/courses/regex/regex-tsl
+    css: style-rau-base/rau-presentation-customer_print.css
+    outputType: print   
+    files:
+      - samples\courses\ra-regex\TLB-frontcover.yaml
+      - samples\_template-files\print\user-info.md
+      - samples\_template-files\print\comments.md
+      - samples\outcomes\regex-intro\presentation.md
+      - samples\outcomes\regex-basics\presentation.md
+      - samples\outcomes\regex-advanced\presentation.md
+      - samples\_template-files\print\backcover.md
+      

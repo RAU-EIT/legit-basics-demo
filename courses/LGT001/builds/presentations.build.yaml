@@ -1,0 +1,31 @@
+builds:
+- desc: outcome sample build
+  skipBuild: false
+  debug: false
+  css: style-rau-base\rau-presentation-customer.css
+  outputType: revealjs
+  baseDirectory: output/courses/TST001/presentations/outcome_01
+  outputFilename: output/courses/TST001/presentations/outcome_01/01_lesson
+  publication: 
+    id: TSP0101
+    revisionDate: "June 2026"
+    classification: Public
+    trainingType: standard
+    publisher: RA Customer Training
+  files:
+    - outcomes/outcome_01/presentation.md
+- desc: outcome sample build
+  skipBuild: false
+  debug: false
+  css: style-rau-base\rau-presentation-customer.css
+  outputType: revealjs
+  baseDirectory: output/courses/TST001/presentations/outcome_02
+  outputFilename: output/courses/TST001/presentations/outcome_02/02_lesson
+  publication: 
+    id: TSP0101
+    revisionDate: "June 2026"
+    classification: Public
+    trainingType: standard
+    publisher: RA Customer Training
+  files:
+    - outcomes/outcome_02/presentation.md

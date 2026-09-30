@@ -1,0 +1,7 @@
+builds:
+- desc: an empty build
+  skipBuild: true
+
+linkedBuilds:
+  - courses/LGT001/builds/tlb-tsl-example.build.yaml
+  - courses/LGT001/builds/presentations.build.yaml

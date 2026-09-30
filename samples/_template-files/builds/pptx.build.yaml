@@ -1,0 +1,16 @@
+builds:
+- desc: regex prez 01 intro (pptx)
+  outputType: pptx
+  skipBuild: false 
+  pptx: 
+    referencePPTX: style-rau-base/RA-brand-template-internal-2026.pptx
+  publication:
+    id: PUB123
+    revisionDate: "June 2026"
+    classification: Internal
+  baseDirectory: output/courses/ra-regex/pptx/
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/ra-regex/pptx/test # note the optional different subfolder as output
+  files:  # files array can have multiple markdown files in a single presentation (title slides beyond 1st are ignored)
+    - samples\_template-files\brand-id-presentation-test.md
+      

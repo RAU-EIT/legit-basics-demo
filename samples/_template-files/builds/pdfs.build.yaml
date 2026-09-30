@@ -1,0 +1,85 @@
+# build.yaml - a configuration for builds of content
+
+--- # start of yaml doc
+builds:
+- desc: Tailored Training single lesson print
+  css: style-rau-base/rau-print_tailoredTraining-single.css
+  skipBuild: false
+  debug: true
+  outputType: print
+  baseDirectory: output/courses/ra-regex/tt/
+  outputFilename: output/courses/ra-regex/tt/regex-intro-tailored-training
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-intro/lab.md
+- desc: Tailored Training single presentation print
+  css: style-rau-base/rau-presentation-customer_print_tailoredTraining-single.css
+  outputType: print
+  skipBuild: false
+  debug: true
+  baseDirectory: output/courses/ra-regex/tt-pres01
+  outputFilename: output/courses/ra-regex/tt-pres01/regex-intro-pres-tt
+  print:
+    showNotes: false
+    slidesPerPage: 2
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/outcomes/regex-intro/presentation.md
+
+- desc: regex lab manual PDF
+  css: style-rau-base/rau-print.css
+  skipBuild: true
+  debug: true
+  outputType: print
+  baseDirectory: output/courses/ra-regex
+  outputFilename: output/courses/ra-regex/lab-manual
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/courses/ra-regex/lab-frontcover.yaml
+    - front-back-matter/lab-user-info.md
+    - samples/_template-files/lab-lesson.md
+    - samples/outcomes/regex-intro/lab.md
+    - samples/outcomes/regex-basics/lab.md
+    - samples/outcomes/regex-advanced/lab.md 
+    - samples\_template-files\appendix.md
+    - front-back-matter/lab-comments.md
+    - front-back-matter/lab-backcover.md
+- desc: regex presentation manual PDF
+  css: style-rau-base/rau-presentation-customer_print.css
+  outputType: print
+  skipBuild: true
+  debug: true
+  baseDirectory: output/courses/ra-regex
+  outputFilename: output/courses/ra-regex/presentation-manual
+  print:
+    showNotes: true
+    slidesPerPage: 2
+  publication:
+    id: RAU002
+    revisionDate: "June 2026"
+    classification: Public # public | internal | confidential | highly confidential restricted
+    publisher: RAU Internal Training
+    trainingType: tailoredTraining
+  files:
+    - samples/courses/ra-regex/lab-frontcover.yaml
+    - front-back-matter/lab-user-info.md
+    - samples/outcomes/regex-intro/presentation.md
+    - samples/outcomes/regex-basics/presentation.md
+    - samples/outcomes/regex-advanced/presentation.md
+    - front-back-matter/lab-comments.md
+    - front-back-matter/lab-backcover.md

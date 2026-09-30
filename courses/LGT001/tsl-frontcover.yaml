@@ -1,0 +1,18 @@
+---
+title: "LGT001, LeGIT Sample Course"
+subtitle: "Student Lessons"
+author: "Rockwell Automation"
+toc-title: "Table of Contents"
+css: style-rau-base/rau-print.css
+# tagline that produces the standard customer training cover page
+tagline:
+    line1: Workforce
+    line2: development
+    line3: Expanding human possibility through learning
+publication:
+    publisher: RAU Internal
+    trainingType: standard course
+    id: TST112
+    revisionDate: "June 2026"
+    classification: Internal
+---

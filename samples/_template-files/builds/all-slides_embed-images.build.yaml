@@ -1,0 +1,21 @@
+# all-slides_embed-resources.build.yaml - an example using the 'all slides' source markdown and 'embed-resources' configuration
+builds:
+- desc: all slides presentation
+  outputType: revealjs
+  skipBuild: false
+  debug: true
+  revealjs:
+    embedResources: true # all images, JS libraries and other media are converted to a BASE64 encoded character string and embedded in the HTML file
+  publication:
+    id: PUB123 
+    revisionDate: "June 2026"
+    classification: Public
+  baseDirectory: output/courses/all-slides
+  css: style-rau-base/rau-presentation-customer.css
+  outputFilename: output/courses/all-slides/all-slides-lecture # note the optional different subfolder as output
+  files:  # files array can have multiple markdown files in a single presentation (title slides beyond 1st are ignored)
+    - samples\_template-files\all-slides-presentation.md
+
+
+
+
